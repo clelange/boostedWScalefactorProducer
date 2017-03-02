@@ -28,10 +28,8 @@
 
 #include "Util.h"
 
-#include "CMS_lumi.C"
 
-
-void GetDataPoissonInterval(const RooAbsData*, RooRealVar*, RooPlot*, const int & = 1); 
+void GetDataPoissonInterval(const RooAbsData*, RooRealVar*, RooPlot*, const int & = 1);
 
 RooPlot* get_pull(RooRealVar*, RooPlot*, RooDataSet*, RooAbsPdf*, RooFitResult* , const std::string & = "data", const std::string & = "model_mc", const int & = 1, const int & = 1, std::vector<TObject*>* = NULL);
 

@@ -1,7 +1,8 @@
 #include "PlotUtils.h"
+#include "CMS_lumi.C"
 
 void GetDataPoissonInterval(const RooAbsData* data, RooRealVar* rrv_x, RooPlot* mplot, const int & RebinFactor){
- 
+
   TString Title ; Title.Form("%s_binnedClone",data->GetName());
   RooDataHist* datahist   = new RooDataHist(Title.Data(),Title.Data(),*rrv_x,*((RooDataSet*)data));
   TH1* data_histo         = datahist->createHistogram("histo_data",*rrv_x) ;
